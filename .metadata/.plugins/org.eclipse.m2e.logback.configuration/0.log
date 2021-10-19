@@ -709,3 +709,311 @@
 2021-10-16 18:29:30,451 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-10-16 18:29:30,452 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2021-10-16 18:29:30,454 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2021-10-19 16:13:43,948 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-10-19 16:16:02,192 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-servicios\pom.xml.
+2021-10-19 16:16:04,728 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-19 16:16:04,736 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-19 16:16:04,969 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2021-10-19 16:16:04,994 [Worker-6: Updating Maven Dependencies] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read parent project
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.hbt.semillero:semillero-padre:1.0-SNAPSHOT at C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:716)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getPomMappingMetadataSources(LifecycleMappingFactory.java:876)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSourcesMap(LifecycleMappingFactory.java:286)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSources(LifecycleMappingFactory.java:265)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateEffectiveLifecycleMappingMetadata(LifecycleMappingFactory.java:249)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateLifecycleMapping(LifecycleMappingFactory.java:190)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupLifecycleMapping(ProjectRegistryManager.java:614)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:533)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$3(ProjectRegistryManager.java:514)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:512)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:364)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:141)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:140)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1100)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:846)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:337)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 30 common frames omitted
+2021-10-19 16:16:08,172 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.web:semillero-web:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-web\pom.xml.
+2021-10-19 16:16:08,185 [Worker-6: Updating Maven Dependencies] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read parent project
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.hbt.semillero:semillero-padre:1.0-SNAPSHOT at C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:716)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getPomMappingMetadataSources(LifecycleMappingFactory.java:876)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSourcesMap(LifecycleMappingFactory.java:286)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSources(LifecycleMappingFactory.java:265)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateEffectiveLifecycleMappingMetadata(LifecycleMappingFactory.java:249)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateLifecycleMapping(LifecycleMappingFactory.java:190)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupLifecycleMapping(ProjectRegistryManager.java:614)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:533)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$3(ProjectRegistryManager.java:514)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:512)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:364)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:141)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:140)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1100)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:846)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:337)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 30 common frames omitted
+2021-10-19 16:16:08,369 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero:semillero-ear:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-ear\pom.xml.
+2021-10-19 16:16:08,461 [Worker-6: Updating Maven Dependencies] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read parent project
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.hbt.semillero:semillero-padre:1.0-SNAPSHOT at C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:716)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getPomMappingMetadataSources(LifecycleMappingFactory.java:876)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSourcesMap(LifecycleMappingFactory.java:286)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSources(LifecycleMappingFactory.java:265)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateEffectiveLifecycleMappingMetadata(LifecycleMappingFactory.java:249)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateLifecycleMapping(LifecycleMappingFactory.java:190)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupLifecycleMapping(ProjectRegistryManager.java:614)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:533)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$3(ProjectRegistryManager.java:514)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:512)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:364)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:141)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:140)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1100)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:846)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:337)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 30 common frames omitted
+2021-10-19 16:16:08,630 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-servicios\pom.xml.
+2021-10-19 16:16:08,676 [Worker-6: Updating Maven Dependencies] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read parent project
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.hbt.semillero:semillero-padre:1.0-SNAPSHOT at C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:716)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getPomMappingMetadataSources(LifecycleMappingFactory.java:876)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSourcesMap(LifecycleMappingFactory.java:286)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSources(LifecycleMappingFactory.java:265)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateEffectiveLifecycleMappingMetadata(LifecycleMappingFactory.java:249)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateLifecycleMapping(LifecycleMappingFactory.java:190)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupLifecycleMapping(ProjectRegistryManager.java:614)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:533)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$3(ProjectRegistryManager.java:514)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:512)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:364)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:141)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:140)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1100)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:846)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:337)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 30 common frames omitted
+2021-10-19 16:16:08,925 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.web:semillero-web:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-web\pom.xml.
+2021-10-19 16:16:09,417 [Worker-6: Updating Maven Dependencies] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read parent project
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.hbt.semillero:semillero-padre:1.0-SNAPSHOT at C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:716)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:740)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getPomMappingMetadataSources(LifecycleMappingFactory.java:876)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSourcesMap(LifecycleMappingFactory.java:286)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectMetadataSources(LifecycleMappingFactory.java:265)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateEffectiveLifecycleMappingMetadata(LifecycleMappingFactory.java:249)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.calculateLifecycleMapping(LifecycleMappingFactory.java:190)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupLifecycleMapping(ProjectRegistryManager.java:614)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:533)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$3(ProjectRegistryManager.java:514)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:512)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:364)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:141)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:140)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1100)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:846)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:337)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 30 common frames omitted
+2021-10-19 16:16:09,652 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero:semillero-ear:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-ear\pom.xml.
+2021-10-19 16:16:12,308 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+2021-10-19 16:16:12,505 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+2021-10-19 16:16:12,612 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+2021-10-19 16:16:12,782 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+2021-10-19 16:16:12,903 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+2021-10-19 16:16:13,123 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+2021-10-19 16:16:13,264 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+2021-10-19 16:16:13,489 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+2021-10-19 16:16:14,086 [Worker-6: Updating Maven Dependencies] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Could not read maven project
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:850)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:1070)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4853)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3951)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4848)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1069)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:251)
+	at org.eclipse.m2e.wtp.jaxrs.internal.configurators.JaxRsProjectConfigurator.mavenProjectChanged(JaxRsProjectConfigurator.java:175)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:1040)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:824)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:991)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2021-10-19 16:17:37,232 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2021-10-19 16:20:50,877 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2021-10-19 16:21:18,420 [Worker-15: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ com.hbt.semillero:semillero-padre:1.0-SNAPSHOT, C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml, line 4, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.hbt.semillero:semillero-padre:1.0-SNAPSHOT: Could not find artifact com.hbt:semillero:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ com.hbt.semillero:semillero-padre:1.0-SNAPSHOT, C:\Users\krang\Documents\semillero-hbt\semillero-padre\pom.xml, line 4, column 10
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$13(ProjectRegistryManager.java:870)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1028)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:866)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:210)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:81)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:258)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:632)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$3.run(MavenPomEditor.java:936)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2021-10-19 16:34:39,196 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-19 16:34:46,715 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-servicios\pom.xml.
+2021-10-19 16:35:08,483 [Worker-7: Updating Maven Dependencies] ERROR o.e.m.c.i.p.r.ProjectRegistryRefreshJob - Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IProject.getLocation()" is null
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IProject.getLocation()" is null
+	at org.eclipse.m2e.wtp.ProjectUtils.getRelativePath(ProjectUtils.java:58)
+	at org.eclipse.m2e.wtp.ProjectUtils.getBuildFolder(ProjectUtils.java:84)
+	at org.eclipse.m2e.wtp.ProjectUtils.getM2eclipseWtpFolder(ProjectUtils.java:75)
+	at org.eclipse.m2e.wtp.internal.mavenarchiver.WarMavenArchiverConfigurator.getOutputDir(WarMavenArchiverConfigurator.java:44)
+	at org.sonatype.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:222)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:1040)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:824)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:991)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2021-10-19 16:35:29,792 [Worker-15: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\krang\Documents\semillero-hbt\semillero-padre\semillero-servicios\pom.xml.
+2021-10-19 16:35:34,521 [Worker-15: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2021-10-19 16:35:34,523 [Worker-15: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2021-10-19 16:35:34,525 [Worker-15: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2021-10-19 16:35:35,885 [Worker-15: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 7 sec
